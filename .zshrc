@@ -113,4 +113,4 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias neofetch="fastfetch"
 alias logout="i3-msg exit"
 
-fastfetch
+# fastfetch
