@@ -259,7 +259,7 @@ set $base #1e1e2e
 set $mantle #181825
 set $crust #11111b
 # target                 title     bg    text   indicator  border
-client.focused           $blue $base $text  $rosewater $blue
+client.focused           $sky $base $text  $rosewater $sky
 client.focused_inactive  $overlay0 $base $text  $rosewater $overlay0
 client.unfocused         $overlay0 $base $text  $rosewater $overlay0
 client.urgent            $peach    $base $peach $overlay0  $peach
