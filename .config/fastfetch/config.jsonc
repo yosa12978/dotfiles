@@ -10,7 +10,7 @@
     {
       "type": "os", 
       "key": "OS......",
-      "keyColor": "blue"
+      "keyColor": "white"
     },
     {
       "type": "kernel", 
@@ -20,37 +20,37 @@
     {
       "type": "packages", 
       "key": "Pkgs....",
-      "keyColor": "green"
+      "keyColor": "white"
     },
     {
       "type": "shell", 
       "key": "Shell...",
-      "keyColor": "yellow"
+      "keyColor": "white"
     },
     {
       "type": "terminal", 
       "key": "Terminal",
-      "keyColor": "default"
+      "keyColor": "white"
     },
     {
       "type": "wm", 
       "key": "WM......",
-      "keyColor": "red"
+      "keyColor": "white"
     },
     {
       "type": "display", 
       "key": "Display.",
-      "keyColor": "cyan"
+      "keyColor": "white"
     },
     {
       "type": "memory",
       "key": "Memory..",
-      "keyColor": "magenta"
+      "keyColor": "white"
     },
     {
       "type": "localip",
       "key": "IP......",
-      "keyColor": "default"
+      "keyColor": "white"
     },
     "break",
     "colors"
