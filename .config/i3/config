@@ -23,7 +23,8 @@ font pango:FiraCode Nerd Font 10
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex-autostart --autostart --environment i3
 
-exec_always --no-startup-id polybar
+# exec_always --no-startup-id killall polybar
+exec --no-startup-id polybar
 
 exec --no-startup-id nitrogen --restore
 
