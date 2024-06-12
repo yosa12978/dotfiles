@@ -9,47 +9,47 @@
   "modules": [
     {
       "type": "os", 
-      "key": "",
+      "key": "OS......",
       "keyColor": "blue"
     },
     {
       "type": "kernel", 
-      "key": "",
+      "key": "Kernel..",
       "keyColor": "white"
     },
     {
       "type": "packages", 
-      "key": "",
+      "key": "Pkgs....",
       "keyColor": "green"
     },
     {
       "type": "shell", 
-      "key": "",
+      "key": "Shell...",
       "keyColor": "yellow"
     },
     {
       "type": "terminal", 
-      "key": "",
+      "key": "Terminal",
       "keyColor": "default"
     },
     {
       "type": "wm", 
-      "key": "",
+      "key": "WM......",
       "keyColor": "red"
     },
     {
       "type": "display", 
-      "key": "󰍹",
+      "key": "Display.",
       "keyColor": "cyan"
     },
     {
       "type": "memory",
-      "key": "󰍛",
+      "key": "Memory..",
       "keyColor": "magenta"
     },
     {
       "type": "localip",
-      "key": "󰛳",
+      "key": "IP......",
       "keyColor": "default"
     },
     "break",
