@@ -110,7 +110,4 @@ export PATH=$PATH:$JAVA_HOME/bin
 alias discord="flatpak run com.discordapp.Discord"
 alias vim="nvim"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-alias neofetch="fastfetch"
 alias logout="i3-msg exit"
-
-# fastfetch
