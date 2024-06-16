@@ -104,7 +104,7 @@ export SHELL="/usr/bin/zsh"
 
 export PATH="$PATH:/usr/local/go/bin"
 
-export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))
+export JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")
 export PATH=$PATH:$JAVA_HOME/bin
 
 alias discord="flatpak run com.discordapp.Discord"
