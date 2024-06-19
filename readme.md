@@ -6,7 +6,7 @@
 ### Arch Linux
 
 ```bash
-sudo pacman -S zsh i3 dmenu polybar alacritty fastfetch picom neovim xorg-xinput xautolock stow nitrogen rofi lxappearance qt5ct
+sudo pacman -S zsh i3 dmenu polybar alacritty fastfetch picom neovim xorg-xinput xautolock stow nitrogen rofi lxappearance brightnessctl
 ```
 
 ### Debian
@@ -14,14 +14,14 @@ sudo pacman -S zsh i3 dmenu polybar alacritty fastfetch picom neovim xorg-xinput
 Install fastfetch from their github releases: [fastfetch github releases](https://github.com/fastfetch-cli/fastfetch/releases)
 
 ```bash
-sudo apt install zsh i3 dmenu polybar alacritty picom neovim xinput xautolock stow nitrogen rofi lxappearance
+sudo apt install zsh i3 dmenu polybar alacritty picom neovim xinput xautolock stow nitrogen rofi lxappearance brightnessctl
 ```
 
 
 ### Fedora
 
 ```bash
-sudo dnf install zsh i3 dmenu i3-gaps polybar alacritty fastfetch picom neovim xinput xautolock stow nitrogen lxappearance rofi
+sudo dnf install zsh i3 dmenu i3-gaps polybar alacritty fastfetch picom neovim xinput xautolock stow nitrogen lxappearance rofi brightnessctl
 ```
 
 
