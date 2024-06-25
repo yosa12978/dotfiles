@@ -237,7 +237,6 @@ gaps outer 7
 bindsym $mod+b exec firefox
 default_border pixel 3
 
-
 set $rosewater #f5e0dc
 set $flamingo #f2cdcd
 set $pink #f5c2e7
