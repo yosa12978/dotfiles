@@ -107,9 +107,7 @@ export PATH="$PATH:/usr/local/go/bin"
 export JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")
 export PATH=$PATH:$JAVA_HOME/bin
 
-alias discord="flatpak run com.discordapp.Discord"
 alias vim="nvim"
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias code="codium"
 alias air="~/go/bin/air"
 alias templ="~/go/bin/templ"
