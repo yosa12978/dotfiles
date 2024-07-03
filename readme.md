@@ -17,7 +17,7 @@ sudo systemctl enable ly # enabling ly login manager (https://github.com/fairygl
 If you want to use i3 and X11
 
 ```bash
-sudo pacman -S i3 dmenu polybar picom xorg-xinput xautolock nitrogen flameshot slock
+sudo pacman -S i3-wm dmenu polybar picom xorg-xinput xautolock nitrogen flameshot slock
 ```
 
 If you want to use sway and Wayland
