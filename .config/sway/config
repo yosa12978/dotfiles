@@ -23,7 +23,7 @@ set $menu dmenu_path | wmenu | xargs swaymsg exec --
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in ~/.local/share/wallpapers)
-output * bg ~/.local/share/bg.png fill
+output * bg ~/.local/share/bg.jpg fill
 #
 # Example configuration:
 #
