@@ -198,8 +198,8 @@ default_border pixel 3
 #
 # gaps
 #
-gaps inner 5
-gaps outer 5
+gaps inner 7
+gaps outer 7
 
 
 #
