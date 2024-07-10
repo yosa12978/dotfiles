@@ -222,7 +222,7 @@ bindsym XF86AudioMute exec amixer set Master toggle
 include catppuccin-mocha
 
 # target                 title     bg    text   indicator  border
-client.focused           $mauve    $base $text  $rosewater $mauve
+client.focused           $yellow   $base $text  $rosewater $yellow
 client.focused_inactive  $overlay0 $base $text  $rosewater $overlay0
 client.unfocused         $overlay0 $base $text  $rosewater $overlay0
 client.urgent            $peach    $base $peach $overlay0  $peach
