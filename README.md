@@ -1,7 +1,8 @@
 # yosa12978 dotfiles
 
-## Installing dependencies
+![Desktop](desktop.png)
 
+## Installing dependencies
 
 ### Arch Linux
 
