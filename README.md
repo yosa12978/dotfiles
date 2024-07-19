@@ -13,7 +13,7 @@
 Basic packages
 
 ```bash
-sudo pacman -S zsh alacritty neovim stow brightnessctl alsa-utils neofetch ly
+sudo pacman -S zsh alacritty neovim stow brightnessctl alsa-utils fastfetch ly
 sudo systemctl enable ly # enabling ly login manager (https://github.com/fairyglade/ly)
 ```
 
