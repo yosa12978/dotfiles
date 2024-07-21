@@ -101,11 +101,10 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export PATH="$PATH:/usr/local/go/bin"
+export PATH="$PATH:$HOME/go/bin"
 
 export JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")
 export PATH="$PATH:$JAVA_HOME/bin"
-
-export PATH="$PATH:$HOME/go/bin"
 
 alias vim="nvim"
 alias codium="codium --ozone-platform-hint=auto"
