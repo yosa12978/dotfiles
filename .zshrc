@@ -100,14 +100,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
-export PATH="$PATH:$HOME/.local/bin"
 
-export PATH="$PATH:$HOME/go/bin"
-
-export JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")
-export PATH="$PATH:$JAVA_HOME/bin"
-
-alias vim="nvim"
-alias codium="codium --ozone-platform-hint=auto"
-alias code="codium --ozone-platform-hint=auto"
-
+source .zaliases
