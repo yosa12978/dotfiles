@@ -1,3 +1,5 @@
+export EDITOR=nvim
+
 # ~/.local/bin directory
 export PATH="$PATH:$HOME/.local/bin"
 
