@@ -24,4 +24,4 @@ hi Normal ctermbg=none guibg=none
 " set noswapfile            " disable creating swap file
 " set backupdir=~/.cache/vim " Directory to store backup files.
 
-
+hi CursorLine guibg=#45475a guifg=none
