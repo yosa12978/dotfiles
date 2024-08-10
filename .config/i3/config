@@ -164,7 +164,7 @@ gaps outer 7
 #
 # border
 #
-default_border pixel 3
+default_border pixel 4
 
 #
 # custom binds
