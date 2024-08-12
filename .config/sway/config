@@ -193,13 +193,13 @@ input type:keyboard {
 #
 # border
 #
-default_border pixel 3
+default_border pixel 4
 
 #
 # gaps
 #
-gaps inner 7
-gaps outer 7
+gaps inner 8
+gaps outer 8
 
 
 #
