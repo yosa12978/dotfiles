@@ -1,4 +1,5 @@
 export EDITOR=nvim
+export XDG_CONFIG_HOME="/home/yusuf/.config"
 
 # ~/.local/bin directory
 export PATH="$PATH:$HOME/.local/bin"
