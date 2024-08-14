@@ -196,7 +196,7 @@ exec_always --no-startup-id xinput --set-prop 10 'libinput Accel Speed' -0.45
 # wallpaper software
 exec --no-startup-id nitrogen --restore
 # language toggle
-exec --no-startup-id setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_toggle
+exec_always --no-startup-id setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_toggle
 # X11 compositor
 exec --no-startup-id picom -b --backend glx
 # slock display locker
