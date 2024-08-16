@@ -164,7 +164,7 @@ gaps outer 8
 #
 # border
 #
-default_border pixel 4
+default_border pixel 5
 
 #
 # custom binds
@@ -234,7 +234,7 @@ set $mantle #181825
 set $crust #11111b
 
 # target                 title     bg    text   indicator  border
-client.focused           $yellow   $base $text  $rosewater $yellow
+client.focused           $mauve    $base $text  $rosewater $mauve
 client.focused_inactive  $overlay0 $base $text  $rosewater $overlay0
 client.unfocused         $overlay0 $base $text  $rosewater $overlay0
 client.urgent            $peach    $base $peach $overlay0  $peach
