@@ -60,7 +60,7 @@ button:hover {
 }
 
 #workspaces button.focused {
-    background-color: @red;
+    background-color: @mauve;
 }
 
 #workspaces button.focused label {
@@ -68,7 +68,7 @@ button:hover {
 }
 
 #workspaces button.urgent {
-    background-color: @red;
+    background-color: @peach;
 }
 
 #workspaces button.urgent label {
@@ -93,7 +93,7 @@ button:hover {
 #power-profiles-daemon,
 #language,
 #mpd {
-    background-color: @red;
+    background-color: @mauve;
     padding: 0 5px;
     color: @crust;
 }
