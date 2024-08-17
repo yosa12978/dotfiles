@@ -23,7 +23,7 @@ set $menu dmenu_path | wmenu-run | xargs swaymsg exec --
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in ~/.local/share/wallpapers)
-output * bg ~/.local/share/bg.jpg fill
+output * bg ~/.local/share/bg fill
 #
 # Example configuration:
 #
@@ -222,7 +222,7 @@ bindsym XF86AudioMute exec amixer set Master toggle
 include catppuccin-mocha
 
 # target                 title     bg    text   indicator  border
-client.focused           $mauve    $base $text  $rosewater $mauve
+client.focused           $red      $base $text  $rosewater $red
 client.focused_inactive  $overlay0 $base $text  $rosewater $overlay0
 client.unfocused         $overlay0 $base $text  $rosewater $overlay0
 client.urgent            $peach    $base $peach $overlay0  $peach
