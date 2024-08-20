@@ -60,7 +60,7 @@ button:hover {
 }
 
 #workspaces button.focused {
-    background-color: @mauve;
+    background-color: @sky;
 }
 
 #workspaces button.focused label {
@@ -93,7 +93,7 @@ button:hover {
 #power-profiles-daemon,
 #language,
 #mpd {
-    background-color: @mauve;
+    background-color: @sky;
     padding: 0 5px;
     color: @crust;
 }
