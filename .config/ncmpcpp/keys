@@ -1,0 +1,5 @@
+key_move_song_up = 'K'
+key_move_song_down = 'J'
+key_next_found_position = 'n'
+key_prev_found_position = 'N'
+
