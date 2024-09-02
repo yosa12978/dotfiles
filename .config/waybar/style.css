@@ -215,7 +215,7 @@ label:focus {
     background-color: #ecf0f1;
     color: #2d3436;
 }
-
+/*
 #mpd {
     background-color: #66cc99;
     color: #2a5c45;
@@ -232,7 +232,7 @@ label:focus {
 #mpd.paused {
     background-color: #51a37a;
 }
-
+*/
 #language {
     padding: 0 10px;
     min-width: 16px;
