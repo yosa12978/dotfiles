@@ -1,3 +1,4 @@
+export BROWSER=firefox
 export EDITOR=nvim
 export XDG_CONFIG_HOME="/home/yusuf/.config"
 
