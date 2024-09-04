@@ -2,8 +2,6 @@
 
 ![Desktop](desktop.png)
 
-*[Wallpaper](https://m-26.jp/wp-content/themes/twentyseventeen-child/img_slide/22.jpg)
-
 ## Installing dependencies
 
 ### Arch Linux
