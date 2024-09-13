@@ -234,7 +234,7 @@ set $mantle #181825
 set $crust #11111b
 
 #f6c177
-set $primary #cdd6f4
+set $primary #ea76cb
 
 # target                 title     bg    text   indicator  border
 client.focused           $primary  $base $text  $primary $primary
