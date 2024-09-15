@@ -171,8 +171,6 @@ default_border pixel 7
 #
 # firefox browser
 bindsym $mod+b exec --no-startup-id firefox
-# rofi
-bindsym Mod1+space exec --no-startup-id rofi -show drun
 # brightness control
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
@@ -233,13 +231,12 @@ set $base #1e1e2e
 set $mantle #181825
 set $crust #11111b
 
-#f6c177
-set $primary #ea76cb
+set $primary #89b4fa
 
 # target                 title     bg    text   indicator  border
 client.focused           $primary  $base $text  $primary $primary
-client.focused_inactive  $overlay0 $base $text  $rosewater $overlay0
-client.unfocused         $overlay0 $base $text  $rosewater $overlay0
+client.focused_inactive  $overlay0 $base $text  $primary $overlay0
+client.unfocused         $overlay0 $base $text  $primary $overlay0
 client.urgent            $peach    $base $peach $overlay0  $peach
 client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
 client.background        $base
