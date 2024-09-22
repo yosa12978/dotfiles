@@ -123,8 +123,9 @@
         "format-alt": "{icon} {time}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
-        "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
-    },
+        "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+		"interval": 5 
+	},
     "battery#bat2": {
         "bat": "BAT2"
     },
@@ -142,7 +143,7 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": " {essid}",
-        "format-ethernet": "  Ok",
+        "format-ethernet": "  ok",
         "format-linked": "󰲛 {ifname}",
         "format-disconnected": "󰲛 Disconnected",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
