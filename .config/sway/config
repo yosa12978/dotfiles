@@ -201,6 +201,10 @@ default_border pixel 7
 gaps inner 8
 gaps outer 8
 
+#
+# window specific config
+#
+for_window [title="File Operation Progress"] floating enable
 
 #
 # custom bindings
