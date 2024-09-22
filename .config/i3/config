@@ -201,6 +201,11 @@ exec --no-startup-id picom -b --backend glx
 exec_always --no-startup-id xautolock -detectsleep -time 5 -locker slock
 
 #
+# window specific config
+#
+for_window [title="File Operation Progress"] floating enable
+
+#
 # colorscheme
 #
 # catppuccin-mocha
