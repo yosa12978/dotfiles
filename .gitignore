@@ -1,2 +1,2 @@
-session/
-plugged/
+.config/nvim/session/
+.config/nvim/plugged/
