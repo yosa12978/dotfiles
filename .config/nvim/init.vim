@@ -1,4 +1,3 @@
-hi Normal guibg=NONE ctermbg=NONE 
 set nocompatible            " disable compatibility to old-time vi
 set showmatch               " show matching 
 set ignorecase              " case insensitive 
@@ -26,30 +25,33 @@ hi CursorLine guibg=#45475a guifg=none
 call plug#begin()
 
 Plug 'tpope/vim-sensible'
-Plug 'junegunn/goyo.vim'
+Plug 'junegunn/goyo.vim', { 'for': 'markdown' }
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'pappasam/coc-jedi', { 'do': 'yarn install --frozen-lockfile && yarn build', 'branch': 'main' }
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
-
-let g:go_def_mapping_enabled = 0
-" Go syntax highlighting
-let g:go_highlight_types = 1
-let g:go_highlight_fields = 1
-let g:go_highlight_functions = 1
-let g:go_highlight_function_calls = 1
-let g:go_highlight_extra_types = 1
-let g:go_highlight_operators = 1
-
-" Auto formatting and importing
-let g:go_fmt_autosave = 1
-let g:go_fmt_command = "goimports"
-
-" Status line types/signatures
-let g:go_auto_type_info = 1
 
 call plug#end()
 
 set completeopt+=popup
 set autowrite
 
-au filetype go inoremap <buffer> . .<C-x><C-o>
+"Goyo
+function! s:goyo_enter()
+	set noshowmode
+	set noshowcmd
+	set scrolloff=999
+	set linebreak
+endfunction
+
+function! s:goyo_leave()
+	hi Normal ctermbg=none guibg=none
+	hi CursorLine guibg=#45475a guifg=none
+	set showmode	
+	set showcmd
+	set scrolloff=5
+	set wrap
+endfunction
+
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
