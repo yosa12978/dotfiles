@@ -27,7 +27,6 @@ call plug#begin()
 Plug 'tpope/vim-sensible'
 Plug 'junegunn/goyo.vim', { 'for': 'markdown' }
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug 'pappasam/coc-jedi', { 'do': 'yarn install --frozen-lockfile && yarn build', 'branch': 'main' }
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 
 call plug#end()
