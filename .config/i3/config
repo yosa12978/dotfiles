@@ -206,6 +206,11 @@ exec_always --no-startup-id xautolock -detectsleep -time 5 -locker slock
 for_window [title="File Operation Progress"] floating enable
 
 #
+# disable focus wrapping
+#
+focus_wrapping no
+
+#
 # colorscheme
 #
 # catppuccin-mocha
