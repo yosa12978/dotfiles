@@ -15,16 +15,10 @@ sudo pacman -S zsh alacritty neovim stow brightnessctl alsa-utils fastfetch ly t
 sudo systemctl enable ly # enabling ly login manager (https://github.com/fairyglade/ly)
 ```
 
-If you want to use i3 and X11
+Install i3 dependencies
 
 ```bash
 sudo pacman -S i3-wm dmenu polybar picom xorg-xinput xautolock xorg-xauth nitrogen flameshot slock
-```
-
-If you want to use sway and Wayland
-
-```bash
-sudo pacman -S sway swaylock swaybg swayidle wmenu waybar
 ```
 
 
