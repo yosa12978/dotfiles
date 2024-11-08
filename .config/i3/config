@@ -169,8 +169,8 @@ default_border pixel 0
 #
 # custom binds
 #
-# firefox browser
-bindsym $mod+b exec --no-startup-id firefox
+# browser
+bindsym $mod+b exec --no-startup-id $BROWSER
 # brightness control
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
