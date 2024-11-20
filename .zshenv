@@ -12,3 +12,6 @@ export PATH="$PATH:$HOME/go/bin"
 # For JAVA
 export JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")
 export PATH="$PATH:$JAVA_HOME/bin"
+
+# fzf
+export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*,.wine/*}"'

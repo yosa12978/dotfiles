@@ -3,6 +3,7 @@
 alias vim="nvim"
 alias codium="codium --ozone-platform-hint=auto"
 alias code="codium --ozone-platform-hint=auto"
+alias fzf="fzf --preview 'bat --style=numbers --color=always {}'"
 
 alias wg0-up="wg-quick up wg0"
 alias wg0-down="wg-quick down wg0"
