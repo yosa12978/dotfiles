@@ -11,7 +11,7 @@
 Basic packages
 
 ```bash
-sudo pacman -S zsh alacritty neovim stow brightnessctl alsa-utils fastfetch ly tmux
+sudo pacman -S zsh alacritty neovim stow brightnessctl alsa-utils fastfetch ly tmux fzf
 sudo systemctl enable ly # enabling ly login manager (https://github.com/fairyglade/ly)
 ```
 
