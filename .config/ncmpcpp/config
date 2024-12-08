@@ -592,7 +592,7 @@ progressbar_elapsed_color = cyan:b
 #
 #alternative_ui_separator_color = black:b
 #
-#window_border_color = green
+window_border_color = blue
 #
 #active_window_border = red
 #
