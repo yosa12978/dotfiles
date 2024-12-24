@@ -3,7 +3,15 @@ local actions = require('telescope.actions')
 local telescope = require('telescope')
 
 telescope.setup({
+    pickers = {
+        find_files = {
+            hidden = true,
+        },
+    },
     defaults = {
+        file_ignore_patterns = {
+            "node_modules", "build", "dist", "yarn.lock", ".git", ".vscode"
+        },
         mappings = {
             i = {
                 ["<C-k>"] = actions.move_selection_previous,
