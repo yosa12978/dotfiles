@@ -12,12 +12,13 @@ return require('packer').startup(function(use)
 	})
 	use('folke/tokyonight.nvim')
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-    use('nvim-treesitter/playground')
+    --use('nvim-treesitter/playground')
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
     use('preservim/nerdcommenter')
     use('junegunn/goyo.vim')
     use('tpope/vim-sensible')
+
     use ({
         "williamboman/mason.nvim",
         "williamboman/mason-lspconfig.nvim",
@@ -29,7 +30,6 @@ return require('packer').startup(function(use)
     use("hrsh7th/cmp-buffer")
     use("hrsh7th/nvim-cmp")
     use("hrsh7th/cmp-nvim-lsp")
-    
 
     use("hrsh7th/cmp-vsnip")
     use("hrsh7th/vim-vsnip")
