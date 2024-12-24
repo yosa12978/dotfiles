@@ -40,5 +40,6 @@ return require('packer').startup(function(use)
 
     use("nvimtools/none-ls.nvim")
 
+    use("folke/zen-mode.nvim")
 end)
 

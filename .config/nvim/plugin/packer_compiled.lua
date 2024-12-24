@@ -188,6 +188,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/yusuf/.local/share/nvim/site/pack/packer/start/vim-vsnip",
     url = "https://github.com/hrsh7th/vim-vsnip"
+  },
+  ["zen-mode.nvim"] = {
+    loaded = true,
+    path = "/home/yusuf/.local/share/nvim/site/pack/packer/start/zen-mode.nvim",
+    url = "https://github.com/folke/zen-mode.nvim"
   }
 }
 
