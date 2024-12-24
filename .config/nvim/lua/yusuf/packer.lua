@@ -6,7 +6,7 @@ return require('packer').startup(function(use)
 		'nvim-telescope/telescope.nvim', tag = '0.1.8',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	})
-	use({ 
+	use({
 		'rose-pine/neovim',
 		as = 'rose-pine'
 	})
@@ -18,6 +18,21 @@ return require('packer').startup(function(use)
     use('preservim/nerdcommenter')
     use('junegunn/goyo.vim')
     use('tpope/vim-sensible')
-    use('neoclide/coc.nvim')
+    use ({
+        "williamboman/mason.nvim",
+        "williamboman/mason-lspconfig.nvim",
+        "neovim/nvim-lspconfig",
+    })
+
+    use("hrsh7th/cmp-path")
+    use("hrsh7th/cmp-cmdline")
+    use("hrsh7th/cmp-buffer")
+    use("hrsh7th/nvim-cmp")
+    use("hrsh7th/cmp-nvim-lsp")
+    
+
+    use("hrsh7th/cmp-vsnip")
+    use("hrsh7th/vim-vsnip")
+    use("rafamadriz/friendly-snippets")
 end)
 
