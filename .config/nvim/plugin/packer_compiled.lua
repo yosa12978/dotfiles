@@ -124,6 +124,11 @@ _G.packer_plugins = {
     path = "/home/yusuf/.local/share/nvim/site/pack/packer/start/nerdcommenter",
     url = "https://github.com/preservim/nerdcommenter"
   },
+  ["none-ls.nvim"] = {
+    loaded = true,
+    path = "/home/yusuf/.local/share/nvim/site/pack/packer/start/none-ls.nvim",
+    url = "https://github.com/nvimtools/none-ls.nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/yusuf/.local/share/nvim/site/pack/packer/start/nvim-cmp",
