@@ -1,1 +1,1 @@
-require('yusuf')
+require('core')
