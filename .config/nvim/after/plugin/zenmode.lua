@@ -20,5 +20,4 @@ require("zen-mode").setup({
     }
 })
 
-vim.cmd("autocmd VimEnter * hi ZenBg ctermbg=NONE guibg=NONE")
 vim.api.nvim_set_keymap('n', '<leader>zm', ':ZenMode<CR>', { noremap = true, silent = true })
