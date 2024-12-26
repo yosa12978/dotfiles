@@ -4,13 +4,18 @@ local actions = require('telescope.actions')
 require('telescope').setup({
     pickers = {
         find_files = {
-            hidden = true,
+            find_command = {
+                "rg",
+                "--files",
+                "--follow",
+                "--no-ignore-vcs",
+                "--hidden",
+                "-g",
+                "!{node_modules/*,.git/*,.wine/*,.vscode/*}",
+            },
         },
     },
     defaults = {
-        file_ignore_patterns = {
-            "node_modules", "build", "dist", "yarn.lock", ".git", ".vscode"
-        },
         mappings = {
             i = {
                 ["<C-k>"] = actions.move_selection_previous,
