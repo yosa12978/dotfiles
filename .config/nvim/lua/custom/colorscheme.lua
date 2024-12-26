@@ -1,10 +1,10 @@
-function SetColor(color)
+function SetColorscheme(color)
 	color = color or 'tokyonight'
 	vim.cmd.colorscheme(color)
 
     local nobg_groups = {
         'Normal', 'NormalNC', 'NormalFloat',
-        'SignColumn', 'StatusLine'
+        'SignColumn', 'StatusLine', 'ZenBg'
     }
     for _, v in pairs(nobg_groups) do
         vim.api.nvim_set_hl(0, v, {bg = 'none'})
@@ -18,4 +18,4 @@ function SetColor(color)
     end
 end
 
-SetColor()
+SetColorscheme()
