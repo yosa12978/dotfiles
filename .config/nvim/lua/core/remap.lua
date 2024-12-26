@@ -1,4 +1,2 @@
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, {remap=false})
-vim.keymap.set("n", "<leader>qq", ":q<CR>",
-  {silent = true, noremap = true}
-)
+vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, {})
+vim.keymap.set("n", "<leader>qq", vim.cmd.q, {})
