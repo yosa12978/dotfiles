@@ -11,7 +11,7 @@ require('telescope').setup({
                 "--no-ignore-vcs",
                 "--hidden",
                 "-g",
-                "!{node_modules/*,.git/*,.wine/*,.vscode/*}",
+                "!{**/node_modules/*,**/.git/*,**/.wine/*,**/.vscode/*,**/.venv/*,**/venv/*,**/.terraform/*}",
             },
         },
     },
