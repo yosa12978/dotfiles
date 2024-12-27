@@ -3,7 +3,7 @@ require("mason-lspconfig").setup({
         "lua_ls", "rust_analyzer",
         "terraformls", "yamlls",
         "sqlls", "pyright", "buf_ls",
-        "marksman", "ts_ls", "html",
+        "marksman", "eslint", "html",
         "gopls", "dockerls", "cssls",
         "bashls", "awk_ls", "ansiblels",
     },
