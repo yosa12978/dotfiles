@@ -1,14 +1,13 @@
 require("mason-lspconfig").setup({
     ensure_installed = {
         "lua_ls", "rust_analyzer",
-        "terraformls", "gitlab_ci_ls",
+        "terraformls", "yamlls",
         "sqlls", "pyright", "buf_ls",
         "marksman", "ts_ls", "html",
         "gopls", "dockerls", "cssls",
         "bashls", "awk_ls", "ansiblels",
     },
 })
-
 
 local border = {
     {"╭", "FloatBorder"},
@@ -38,6 +37,16 @@ end
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
+vim.filetype.add({
+    filename = {
+        [".gitlab-ci.yml"] = "yaml.gitlab",
+    },
+    pattern = {
+        [".*/ansible/.*%.yaml"] = "yaml.ansible",
+        [".*/ansible/.*%.yml"] = "yaml.ansible",
+    }
+})
+
 local lsp = require("lspconfig")
 
 require("mason-lspconfig").setup_handlers({
@@ -58,4 +67,20 @@ lsp.lua_ls.setup({
             }
         }
     }
+})
+
+
+lsp.yamlls.setup({
+    cmd = { 'yaml-language-server', '--stdio' },
+    settings = {
+        yaml = {
+            schemaStore = {
+                enable = false,
+            },
+            schemas = {
+                ['https://gitlab.com/gitlab-org/gitlab/-/raw/master/app/assets/javascripts/editor/schema/ci.json'] = '*.gitlab-ci.yml',
+            },
+        },
+    },
+    filetypes = { 'yaml.gitlab' },
 })
