@@ -17,5 +17,9 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 
 require("lazy").setup({
-	spec = require "config.plugins"
+	spec = require "config.plugins",
+    ui = {
+        border = { '╭', '─', '╮', '│', '╯', '─', '╰', '│' }
+    },
+
 })

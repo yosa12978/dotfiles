@@ -22,6 +22,7 @@ return {
     {
         "nvim-treesitter/nvim-treesitter",
         build = ":TSUpdate",
+        lazy = false,
         config = function()
             require "plugins.treesitter"
         end
@@ -44,32 +45,48 @@ return {
     {
         "preservim/nerdcommenter",
     },
-    {
+    { -- package manager for lsp servers and formatters
         "williamboman/mason.nvim",
+        lazy = false,
+        dependencies = {
+            "neovim/nvim-lspconfig",
+            "williamboman/mason-lspconfig.nvim"
+        },
         config = function()
             require("mason").setup()
+            require "plugins.mason_lsp"
         end
     },
-    {
-        "hrsh7th/cmp-vsnip",
-        "hrsh7th/vim-vsnip",
-        "hrsh7th/cmp-path",
-        "hrsh7th/cmp-cmdline",
-        "hrsh7th/cmp-buffer",
+    { -- completion
         "hrsh7th/nvim-cmp",
-        "hrsh7th/cmp-nvim-lsp",
-        "rafamadriz/friendly-snippets",
+        lazy = false,
+        priority = 100,
         dependencies = {
-            "mason.nvim",
+            "hrsh7th/cmp-path",
+            "hrsh7th/cmp-buffer",
+            "hrsh7th/cmp-nvim-lsp",
+            {
+                "L3MON4D3/LuaSnip",
+                build = "make install_jsregexp",
+                dependencies = {
+                    "rafamadriz/friendly-snippets",
+                }
+            },
+            "saadparwaiz1/cmp_luasnip",
         },
-    },
-    {
-        "neovim/nvim-lspconfig",
-        "williamboman/mason-lspconfig.nvim",
-        dependencies = { "mason.nvim", "cmp-nvim-lsp" },
         config = function()
-            require "plugins.mason_lsp" 
+            require("luasnip.loaders.from_vscode").lazy_load()
             require "plugins.cmp"
         end
     },
+    {
+        "nvimtools/none-ls.nvim",
+        lazy = false,
+        dependencies = {
+            "mason.nvim"
+        },
+        config = function()
+            require "plugins.null_ls"
+        end
+    }
 }

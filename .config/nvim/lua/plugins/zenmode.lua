@@ -19,5 +19,5 @@ require("zen-mode").setup({
         },
     }
 })
-vim.api.nvim_set_hl(0, 'ZenBg', { bg = "none" }) 
+vim.api.nvim_set_hl(0, 'ZenBg', { bg = "none" })
 vim.api.nvim_set_keymap('n', '<leader>zm', ':ZenMode<CR>', { noremap = true, silent = true })
