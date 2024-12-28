@@ -173,7 +173,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym Print exec --no-startup-id flameshot gui
 
 bindsym $mod+Shift+x exec --no-startup-id ~/.local/bin/shutdown.sh
-
+bindsym $mod+Shift+z exec --no-startup-id ~/.local/bin/reboot.sh
 #
 # execs
 #
