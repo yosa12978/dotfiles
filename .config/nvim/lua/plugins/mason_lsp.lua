@@ -6,6 +6,7 @@ require("mason-lspconfig").setup({
         "marksman", "eslint", "html",
         "gopls", "dockerls", "cssls",
         "bashls", "awk_ls", "ansiblels",
+        "jinja_lsp"
     },
 })
 
