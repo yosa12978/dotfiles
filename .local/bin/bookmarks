@@ -1,0 +1,39 @@
+#!/bin/bash
+set -e
+set -o pipefail
+bookmarks_file="$HOME/.local/share/bookmarks"
+if ! [ -f "$bookmarks_file" ]; then
+    echo "file ${bookmarks_file} not found" >&2
+    exit 1
+fi
+
+if [ "$1" == "edit" ]; then
+    "$EDITOR" "$bookmarks_file"
+    exit 0
+fi
+
+# shellcheck disable=SC2016
+get_title='
+function get_title(number_of_fields) { 
+    title="" 
+    for(i = 1; i < number_of_fields; i++){ 
+        title=title $i 
+        if(i != number_of_fields-1) 
+            title=title FS 
+        }
+    return title 
+}'
+
+# shellcheck disable=SC2016
+print_titles=$(printf "%s\n%s" "$get_title" '{ print get_title(NF) }')
+
+# shellcheck disable=SC2016
+print_addr=$(printf "%s\n%s" "$get_title" 'get_title(NF) == choice { print $NF }')
+
+choice="$(awk "$print_titles" "$bookmarks_file" | dmenu -i -l 5 -p "Bookmarks")"
+addr="$(awk -v choice="$choice" "$print_addr" "$bookmarks_file")"
+if [ "$1" == "-" ] || [ -z "$BROWSER" ]; then
+    echo "$addr" | xclip -selection clipboard
+    exit 0
+fi
+"$BROWSER" "$addr"
