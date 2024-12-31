@@ -30,7 +30,7 @@ print_titles=$(printf "%s\n%s" "$get_title" '{ print get_title(NF) }')
 # shellcheck disable=SC2016
 print_addr=$(printf "%s\n%s" "$get_title" 'get_title(NF) == choice { print $NF }')
 
-choice="$(awk "$print_titles" "$bookmarks_file" | dmenu -i -l 5 -p "Bookmarks")"
+choice="$(awk "$print_titles" "$bookmarks_file" | dmenu -i -l 15 -p "Bookmarks")"
 addr="$(awk -v choice="$choice" "$print_addr" "$bookmarks_file")"
 if [ "$1" == "-" ] || [ -z "$BROWSER" ]; then
     echo "$addr" | xclip -selection clipboard
