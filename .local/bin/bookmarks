@@ -14,21 +14,21 @@ fi
 
 # shellcheck disable=SC2016
 get_title='
-function get_title(number_of_fields) { 
+function get_title() { 
     title="" 
-    for(i = 1; i < number_of_fields; i++){ 
+    for(i = 1; i < NF; i++){ 
         title=title $i 
-        if(i != number_of_fields-1) 
+        if(i != NF-1) 
             title=title FS 
         }
     return title 
 }'
 
 # shellcheck disable=SC2016
-print_titles=$(printf "%s\n%s" "$get_title" '{ print get_title(NF) }')
+print_titles=$(printf "%s\n%s" "$get_title" '{ print get_title() }')
 
 # shellcheck disable=SC2016
-print_addr=$(printf "%s\n%s" "$get_title" 'get_title(NF) == choice { print $NF }')
+print_addr=$(printf "%s\n%s" "$get_title" 'get_title() == choice { print $NF }')
 
 choice="$(awk "$print_titles" "$bookmarks_file" | dmenu -i -l 15 -p "Bookmarks")"
 addr="$(awk -v choice="$choice" "$print_addr" "$bookmarks_file")"
