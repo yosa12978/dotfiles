@@ -12,10 +12,15 @@ function SetColorscheme(color)
 
     local bold_white_text = {
         "StatusLine", "StatusLineNC", "ModeMsg",
-        --"LineNrAbove", "LineNr", "LineNrBelow",
     }
     for _, v in pairs(bold_white_text) do
         vim.api.nvim_set_hl(0, v, {fg="#e5e9f0", bg="none", bold = true})
+    end
+    local white_text = {
+        "LineNrAbove", "LineNr", "LineNrBelow",
+    }
+    for _, v in pairs(white_text) do
+        vim.api.nvim_set_hl(0, v, {fg="#e5e9f0", bg="none"})
     end
 end
 
