@@ -25,7 +25,6 @@ vim.opt.updatetime = 50
 
 vim.wo.number = true
 vim.wo.relativenumber = true
-vim.api.nvim_set_hl(0, "LineNr", { ctermfg = "white"})
 
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
