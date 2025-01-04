@@ -1,6 +1,6 @@
 # yosa12978 dotfiles
 
-![Desktop](desktop.webp)
+![Desktop](desktop.png)
 
 ## Installing dependencies
 
