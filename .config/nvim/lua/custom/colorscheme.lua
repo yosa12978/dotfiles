@@ -16,12 +16,10 @@ function SetColorscheme(color)
     for _, v in pairs(bold_white_text) do
         vim.api.nvim_set_hl(0, v, {fg="#e5e9f0", bg="none", bold = true})
     end
-    local white_text = {
-        "LineNrAbove", "LineNr", "LineNrBelow",
-    }
-    for _, v in pairs(white_text) do
-        vim.api.nvim_set_hl(0, v, {fg="#e5e9f0", bg="none"})
-    end
+
+    vim.api.nvim_set_hl(0, "LineNrAbove", {fg="#32344a", bg="none"})
+    vim.api.nvim_set_hl(0, "LineNrBelow", {fg="#32344a", bg="none"})
+    vim.api.nvim_set_hl(0, "LineNr", {fg="#444b6a", bg="none"})
 end
 
 SetColorscheme()
