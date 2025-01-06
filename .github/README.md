@@ -6,8 +6,6 @@
 
 ### Arch Linux
 
-(You can use basically any linux distro but since I mainly use Arch linux on desktop I wrote commands only for Arch)
-
 Basic packages
 
 ```bash
@@ -20,7 +18,6 @@ Install i3 dependencies
 ```bash
 sudo pacman -S i3-wm dmenu polybar picom xorg-xinput xautolock xorg-xauth nitrogen flameshot slock
 ```
-
 
 After doing that install [oh-my-zsh](https://ohmyz.sh/#install)
 
