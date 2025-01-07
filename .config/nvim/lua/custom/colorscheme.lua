@@ -17,9 +17,9 @@ function SetColorscheme(color)
         vim.api.nvim_set_hl(0, v, {fg="#e5e9f0", bg="none", bold = true})
     end
 
-    vim.api.nvim_set_hl(0, "LineNrAbove", {fg="#32344a", bg="none"})
-    vim.api.nvim_set_hl(0, "LineNrBelow", {fg="#32344a", bg="none"})
-    vim.api.nvim_set_hl(0, "LineNr", {fg="#444b6a", bg="none"})
+    vim.api.nvim_set_hl(0, "LineNrAbove", {fg="#444b6a", bg="none"})
+    vim.api.nvim_set_hl(0, "LineNrBelow", {fg="#444b6a", bg="none"})
+    vim.api.nvim_set_hl(0, "LineNr", {fg="#56628a", bg="none"})
 end
 
 SetColorscheme()
