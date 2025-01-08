@@ -6,8 +6,11 @@ export TERMINAL=alacritty
 # ~/.local/bin directory
 export PATH="$PATH:$HOME/.local/bin"
 
+# ~/.local/scripts directory
+export PATH="$PATH:$HOME/.local/scripts"
+
 # go install binaries
-export PATH="$PATH:$HOME/go/bin"
+export PATH="$PATH:$HOME/.go/bin"
 
 # For JAVA
 export JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")
