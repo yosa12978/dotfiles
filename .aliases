@@ -7,3 +7,5 @@ alias fzf="fzf --preview 'bat --style=numbers --color=always {}'"
 
 alias wgup="wg-quick up wg0"
 alias wgdown="wg-quick down wg0"
+
+alias http="http --style=pie-dark"
