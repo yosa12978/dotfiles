@@ -6,26 +6,21 @@
 
 ### Arch Linux
 
-Basic packages
-
 ```bash
+# basic packages
 sudo pacman -S zsh alacritty neovim stow brightnessctl alsa-utils fastfetch ly tmux fzf bat tealdeer
-sudo systemctl enable ly # enabling ly login manager (https://github.com/fairyglade/ly)
-```
 
-Install i3 dependencies
+# enable ly login manager
+sudo systemctl enable ly
 
-```bash
+# i3 dependencies
 sudo pacman -S i3-wm dmenu polybar picom xorg-xinput xautolock xorg-xauth nitrogen flameshot slock
-```
 
-After doing that install [oh-my-zsh](https://ohmyz.sh/#install)
-
-```bash
+# oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-### Installing dotfiles
+## Installing dotfiles
 
 Clone this repo and replace your configs with my dotfiles
 
