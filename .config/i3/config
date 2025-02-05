@@ -144,7 +144,7 @@ bindsym $mod+r mode "resize"
 # gaps
 #
 gaps inner 8
-gaps outer 34
+gaps outer 37
 
 #
 # border
