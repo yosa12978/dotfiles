@@ -1,6 +1,4 @@
-# i3 config file (v4)
-#
-# Please see https://i3wm.org/docs/userguide.html for a complete reference!
+# My i3 config
 
 set $mod Mod4
 
@@ -146,7 +144,7 @@ bindsym $mod+r mode "resize"
 # gaps
 #
 gaps inner 8
-gaps outer 24
+gaps outer 34
 
 #
 # border
@@ -181,7 +179,7 @@ bindsym $mod+Shift+b exec --no-startup-id $HOME/.local/scripts/bookmarks
 #
 
 # polybar
-exec_always --no-startup-id sh ~/.config/polybar/launch.sh
+# exec_always --no-startup-id sh ~/.config/polybar/launch.sh
 
 # mouse acceleration settings
 exec_always --no-startup-id xinput set-prop 10 "libinput Accel Profile Enabled" 0 1 0
@@ -194,7 +192,7 @@ exec --no-startup-id nitrogen --restore
 exec_always --no-startup-id setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_toggle
 
 # X11 compositor
-exec --no-startup-id picom -b 
+# exec --no-startup-id picom -b 
 
 # slock display locker
 exec_always --no-startup-id xautolock -detectsleep -time 5 -locker slock
@@ -209,43 +207,7 @@ for_window [title="File Operation Progress"] floating enable
 #
 focus_wrapping no
 
-#
-# colorscheme
-#
-# catppuccin-mocha
-set $rosewater #f5e0dc
-set $flamingo #f2cdcd
-set $pink #f5c2e7
-set $mauve #cba6f7
-set $red #f38ba8
-set $maroon #eba0ac
-set $peach #fab387
-set $yellow #f9e2af
-set $green #a6e3a1
-set $teal #94e2d5
-set $sky #89dceb
-set $sapphire #74c7ec
-set $blue #89b4fa
-set $lavender #b4befe
-set $text #cdd6f4
-set $subtext1 #bac2de
-set $subtext0 #a6adc8
-set $overlay2 #9399b2
-set $overlay1 #7f849c
-set $overlay0 #6c7086
-set $surface2 #585b70
-set $surface1 #45475a
-set $surface0 #313244
-set $base #1e1e2e
-set $mantle #181825
-set $crust #11111b
-
-set $primary #cdd6f4
-
-# target                 title     bg    text   indicator  border
-client.focused           $primary  $base $text  $primary   $primary
-client.focused_inactive  $overlay0 $base $text  $overlay0  $overlay0
-client.unfocused         $overlay0 $base $text  $overlay0  $overlay0
-client.urgent            $peach    $base $peach $peach     $peach
-client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
-client.background        $base
+bar {
+    status_command i3status
+    position bottom 
+}
