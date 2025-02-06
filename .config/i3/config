@@ -18,6 +18,8 @@ exec --no-startup-id /usr/lib/gsd-xsettings
 
 exec --no-startup-id nm-applet
 
+exec --no-startup-id dunst
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 
@@ -209,5 +211,5 @@ focus_wrapping no
 
 bar {
     status_command i3status
-    position bottom 
+    position top 
 }
