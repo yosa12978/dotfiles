@@ -204,9 +204,6 @@ exec_always --no-startup-id xautolock -detectsleep -time 5 -locker slock
 #
 for_window [title="File Operation Progress"] floating enable
 
-floating_minimum_size 400 x 300
-floating_maximum_size -1 x -1
-
 #
 # disable focus wrapping
 #
