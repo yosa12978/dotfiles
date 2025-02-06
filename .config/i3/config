@@ -204,12 +204,50 @@ exec_always --no-startup-id xautolock -detectsleep -time 5 -locker slock
 #
 for_window [title="File Operation Progress"] floating enable
 
+floating_minimum_size 400 x 300
+floating_maximum_size -1 x -1
+
 #
 # disable focus wrapping
 #
 focus_wrapping no
 
+set_from_resource $back			i3wm.background  #101421
+set_from_resource $black		i3wm.black       #2e2e2e
+set_from_resource $grey			i3wm.grey		 #373B41
+set_from_resource $lightgrey	i3wm.lightgrey	 #707880
+set_from_resource $white		i3wm.white	     #e5e9f0
+set_from_resource $yellow		i3wm.yellow	     #f6c744
+set_from_resource $orange       i3wm.orange	     #f6c744
+set_from_resource $red			i3wm.red		 #eb4129
+set_from_resource $magenta      i3wm.magenta	 #a47de9
+set_from_resource $green		i3wm.green	     #abe047
+set_from_resource $blue         i3wm.blue        #49a4f8
+set_from_resource $text         i3wm.text        #fffbf6
+set_from_resource $darkmagenta  i3wm.darkmagenta #714ab6
+
+# target                 title     bg    text   indicator  border
+client.focused           $magenta  $back $white $yellow    $magenta
+client.focused_inactive  $grey     $back $white $yellow    $grey
+client.unfocused         $grey     $back $white $yellow    $grey
+client.urgent            $red      $back $white $grey      $red
+client.placeholder       $grey     $back $white $grey      $grey
+client.background        $back
+
 bar {
     status_command i3status
-    position top 
+    position bottom
+    font pango:FiraCode Nerd Font 10
+    colors {
+        background         $back
+        statusline         $white
+        focused_statusline $white
+        focused_separator  $grey
+
+        # target           border       bg          text
+        focused_workspace  $darkmagenta $magenta    $white
+        active_workspace   $magenta     $back       $back
+        inactive_workspace $black       $back       $text
+        urgent_workspace   $yellow      $yellow     $text
+    }
 }
