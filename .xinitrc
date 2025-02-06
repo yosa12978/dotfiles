@@ -5,4 +5,5 @@ setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_toggle
 xset dpms 300 &
 xss-lock -- slock &
 sxhkd &
+dunst &
 exec dwm
