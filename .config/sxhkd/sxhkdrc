@@ -1,0 +1,41 @@
+super + Return
+    $TERMINAL
+
+super + b
+    $BROWSER
+
+super + shift + b
+    bookmarks
+
+super + shift + x
+    $HOME/.local/scripts/shutdown.sh
+
+super + shift + z
+    $HOME/.local/scripts/reboot.sh
+
+super + shift + w
+    $HOME/.local/scripts/weather.sh
+
+super + d
+    dmenu_run
+
+XF86MonBrightnessUp
+    brightnessctl set +5%
+
+XF86MonBrightnessDown
+    brightnessctl set 5%-
+
+XF86AudioRaiseVolume
+    amixer set Master 5%+ unmute
+
+XF86AudioLowerVolume
+    amixer set Master 5%- unmute
+
+XF86AudioMute
+    amixer set Master toggle
+
+XF86AudioMicMute
+    pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+Print
+    flameshot gui
