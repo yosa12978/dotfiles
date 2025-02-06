@@ -6,4 +6,5 @@ xset dpms 300 &
 xss-lock -- slock &
 sxhkd &
 dunst &
+$HOME/.local/scripts/dwmstatus.sh &
 exec dwm
