@@ -26,16 +26,16 @@ XF86MonBrightnessDown
     brightnessctl set 5%-
 
 XF86AudioRaiseVolume
-    amixer set Master 5%+ unmute
+    amixer set Master 5%+ unmute ; refresh_status.sh
 
 XF86AudioLowerVolume
-    amixer set Master 5%- unmute
+    amixer set Master 5%- unmute ; refresh_status.sh
 
 XF86AudioMute
-    amixer set Master toggle
+    amixer set Master toggle ; refresh_status.sh
 
 XF86AudioMicMute
-    pactl set-source-mute @DEFAULT_SOURCE@ toggle
+    pactl set-source-mute @DEFAULT_SOURCE@ toggle ; refresh_status.sh
 
 Print
     flameshot gui
