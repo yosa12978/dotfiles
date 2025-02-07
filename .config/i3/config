@@ -1,33 +1,24 @@
 # My i3 config
 
+# Setting mod key to be Super
 set $mod Mod4
 
-# Font for window titles. Will also be used by the bar unless a different font
-# is used in the bar {} block below.
+# Font for window titles. 
 font pango:FiraCode Nerd Font 10
 
-
-# Start XDG autostart .desktop files using dex. See also
-# https://wiki.archlinux.org/index.php/XDG_Autostart
+# Start XDG autostart .desktop files using dex.
 exec --no-startup-id dex-autostart --autostart --environment i3
 
 exec --no-startup-id /usr/lib/gsd-xsettings 
-
-# NetworkManager is the most popular way to manage wireless networks on Linux,
-# and nm-applet is a desktop environment-independent system tray GUI for it.
 
 exec --no-startup-id nm-applet
 
 exec --no-startup-id dunst
 
-# Use pactl to adjust volume in PulseAudio.
+# Used to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 
-# Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
-
-# move tiling windows via drag & drop by left-clicking into the title bar,
-# or left-clicking anywhere into the window while holding the floating modifier.
 tiling_drag modifier titlebar
 
 # start a terminal
@@ -77,8 +68,6 @@ bindsym $mod+a focus parent
 # focus the child container
 bindsym $mod+semicolon focus child
 
-# Define names for default workspaces for which we configure key bindings later on.
-# We use variables to avoid repeating the names in multiple places.
 set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
@@ -116,43 +105,29 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+# restart i3 inplace
 bindsym $mod+Shift+r restart
-# exit i3 (logs you out of your X session)
+# exit i3
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you want to end your X session?' -B 'Yes' 'i3-msg exit'"
 
-# resize window (you can also use the mouse for that)
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
-
-        # Pressing h will shrink the window’s width.
-        # Pressing l will grow the window’s width.
-        # Pressing k will shrink the window’s height.
-        # Pressing j will grow the window’s height.
         bindsym h resize shrink width 10 px
         bindsym j resize grow height 10 px
         bindsym k resize shrink height 10 px
         bindsym l resize grow width 10 px
 
-        # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
 }
-
 bindsym $mod+r mode "resize"
 
-#
 # gaps
-#
 gaps inner 8
 gaps outer 37
 
-#
-# border
-#
+# border width
 default_border pixel 0
-
 
 # browser
 bindsym $mod+b exec --no-startup-id $BROWSER
@@ -176,12 +151,6 @@ bindsym $mod+Shift+x exec --no-startup-id $HOME/.local/scripts/shutdown.sh
 bindsym $mod+Shift+z exec --no-startup-id $HOME/.local/scripts/reboot.sh
 bindsym $mod+Shift+w exec --no-startup-id $HOME/.local/scripts/weather.sh
 bindsym $mod+Shift+b exec --no-startup-id $HOME/.local/scripts/bookmarks
-#
-# execs
-#
-
-# polybar
-# exec_always --no-startup-id sh ~/.config/polybar/launch.sh
 
 # mouse acceleration settings
 exec_always --no-startup-id xinput set-prop 10 "libinput Accel Profile Enabled" 0 1 0
@@ -193,22 +162,19 @@ exec --no-startup-id nitrogen --restore
 # language toggle
 exec_always --no-startup-id setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_toggle
 
-# X11 compositor
-# exec --no-startup-id picom -b 
-
 # slock display locker
 exec_always --no-startup-id xautolock -detectsleep -time 5 -locker slock
 
-#
 # window specific config
-#
 for_window [title="File Operation Progress"] floating enable
 
-#
 # disable focus wrapping
-#
 focus_wrapping no
 
+
+#
+# colorscheme configuration 
+#
 set_from_resource $back			i3wm.background  #101421
 set_from_resource $darker       i3wm.darker      #202020
 set_from_resource $black		i3wm.black       #2e2e2e
