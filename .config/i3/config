@@ -175,26 +175,27 @@ focus_wrapping no
 #
 # colorscheme configuration 
 #
-set_from_resource $back			i3wm.background  #101421
-set_from_resource $darker       i3wm.darker      #202020
-set_from_resource $black		i3wm.black       #2e2e2e
-set_from_resource $grey			i3wm.grey		 #373B41
-set_from_resource $lightgrey	i3wm.lightgrey	 #707880
-set_from_resource $white		i3wm.white	     #e5e9f0
-set_from_resource $yellow		i3wm.yellow	     #f6c744
-set_from_resource $orange       i3wm.orange	     #f6c744
-set_from_resource $red			i3wm.red		 #eb4129
-set_from_resource $magenta      i3wm.magenta	 #a47de9
-set_from_resource $green		i3wm.green	     #abe047
-set_from_resource $blue         i3wm.blue        #49a4f8
-set_from_resource $text         i3wm.text        #fffbf6
-set_from_resource $darkmagenta  i3wm.darkmagenta #714ab6
+set_from_resource $back i3wm.background #101421
+set_from_resource $overlay0   i3wm.overlay0   #202020
+set_from_resource $black      i3wm.black      #2e2e2e
+set_from_resource $text       i3wm.text       #fffbf6
+set_from_resource $grey       i3wm.grey       #373B41
+set_from_resource $lightgrey  i3wm.lightgrey  #707880
+set_from_resource $white      i3wm.white      #e5e9f0
+set_from_resource $yellow     i3wm.yellow     #f6c744
+set_from_resource $orange     i3wm.orange     #fe640b
+set_from_resource $red        i3wm.red        #eb4129
+set_from_resource $magenta    i3wm.magenta    #a47de9
+set_from_resource $green      i3wm.green      #abe047
+set_from_resource $blue       i3wm.blue       #49a4f8
+set_from_resource $cyan       i3wm.cyan       #64dbed
+set_from_resource $primary    i3wm.primary    #a47de9
 
 # target                 title     bg    text   indicator  border
-client.focused           $magenta  $back $white $yellow    $magenta
-client.focused_inactive  $grey     $back $white $yellow    $grey
-client.unfocused         $grey     $back $white $yellow    $grey
-client.urgent            $red      $back $white $grey      $red
+client.focused           $primary  $back $white $primary   $primary
+client.focused_inactive  $grey     $back $white $grey      $grey
+client.unfocused         $grey     $back $white $grey      $grey
+client.urgent            $red      $back $white $red       $red
 client.placeholder       $grey     $back $white $grey      $grey
 client.background        $back
 
@@ -209,9 +210,9 @@ bar {
         focused_separator  $grey
 
         # target           border       bg          text
-        focused_workspace  $darkmagenta $magenta    $white
-        active_workspace   $magenta     $back       $back
-        inactive_workspace $grey        $darker     $text
+        focused_workspace  $primary     $primary    $white
+        active_workspace   $primary     $back       $back
+        inactive_workspace $grey        $overlay0   $text
         urgent_workspace   $yellow      $yellow     $text
     }
 }
