@@ -14,7 +14,7 @@ get_ethernet() {
         echo "ETH: up"
         return 0 
     fi
-    echo "ETH: down"
+#    echo "ETH: down"
 }
 
 get_memory() {
@@ -38,13 +38,14 @@ get_battery() {
     if [ -d /sys/class/power_supply/BAT0 ]; then
         battery=$(cat /sys/class/power_supply/BAT0/capacity)
         echo "BAT: $battery%"
-    else
-        echo "BAT: N/A"
+#    else
+#        echo "BAT: N/A"
     fi
 }
 
 update_status() {
     status=" $(get_volume) | $(get_wifi) | $(get_ethernet) | $(get_memory) | $(get_battery) | $(get_time) "
+    status=$(echo "$status" | sed "s/|\s*|/|/g" )
     xsetroot -name "$status" 2> /dev/null
 }
 
