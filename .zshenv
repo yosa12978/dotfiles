@@ -1,7 +1,7 @@
 export BROWSER=chromium
 export EDITOR=nvim
 export XDG_CONFIG_HOME="/home/yusuf/.config"
-export TERMINAL=alacritty
+export TERMINAL=st # alacritty
 
 # ~/.local/bin directory
 export PATH="$PATH:$HOME/.local/bin"
