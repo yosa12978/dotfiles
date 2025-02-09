@@ -14,7 +14,6 @@ get_ethernet() {
         echo "ETH: up"
         return 0 
     fi
-#    echo "ETH: down"
 }
 
 get_memory() {
@@ -24,11 +23,11 @@ get_memory() {
 get_volume() {
     volume_info=$(amixer get Master | grep -o '\[[0-9]\+%\]\s\[.*\]' | head -1 | tr -s '\[\]' ' ')
     volume_percentage=$(echo "$volume_info" | cut -d ' ' -f2)
-    volume_mute=$(echo "$volume_info" | cut -d ' ' -f3)
-    if [ "$volume_mute" == "on" ];then
+    volume_mute=$(echo "$volume_info" | rev | cut -d ' ' -f2 | rev)
+    if [ "$volume_mute" == "on" ]; then
         volume_mute=""
     else
-        volume_mute="(muted)"
+        volume_mute="(m)"
     fi
 
     echo "VOL: $volume_percentage$volume_mute"
@@ -37,7 +36,13 @@ get_volume() {
 get_battery() {
     if [ -d /sys/class/power_supply/BAT0 ]; then
         battery=$(cat /sys/class/power_supply/BAT0/capacity)
-        echo "BAT: $battery%"
+        status=$(cat /sys/class/power_supply/BAT0/status)
+        if [ "$status" == "Charging" ]; then
+            status="(c)"
+        else
+            status=""
+        fi
+        echo "BAT: $battery%$status"
 #    else
 #        echo "BAT: N/A"
     fi
