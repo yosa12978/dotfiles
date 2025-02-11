@@ -1,4 +1,4 @@
-export BROWSER=chromium
+export BROWSER=brave
 export EDITOR=nvim
 export XDG_CONFIG_HOME="/home/yusuf/.config"
 export TERMINAL=st # alacritty
