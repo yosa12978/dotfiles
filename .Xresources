@@ -13,3 +13,10 @@
 *blue       :#49a4f8
 *cyan       :#64dbed
 *primary    :#a47de9
+
+dwm.normfgcolor: text
+dwm.normbgcolor: background 
+dwm.normbordercolor: grey
+dwm.selfgcolor: text
+dwm.selbgcolor: magenta 
+dwm.selbordercolor: magenta 
