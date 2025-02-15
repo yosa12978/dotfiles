@@ -108,7 +108,8 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace
 bindsym $mod+Shift+r restart
 # exit i3
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you want to end your X session?' -B 'Yes' 'i3-msg exit'"
+bindsym $mod+Shift+e exit 
+#exec "i3-nagbar -t warning -m 'Do you want to end your X session?' -B 'Yes' 'i3-msg exit'"
 
 mode "resize" {
         bindsym h resize shrink width 10 px
