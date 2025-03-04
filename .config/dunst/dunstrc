@@ -18,13 +18,13 @@
     icon_corner_radius = 0
     icon_corners = all
     indicate_hidden = yes
-    transparency = 10
+    transparency = 0
     separator_height = 2
     padding = 20
     horizontal_padding = 13
     text_icon_padding = 0
     frame_width = 3 
-    frame_color = "#ffffff"
+    frame_color = "#a47de9"
     gap_size = 0
     separator_color = frame
     sort = yes
