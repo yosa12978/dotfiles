@@ -12,5 +12,5 @@ while true; do
     $HOME/.local/scripts/dwmstatus.sh
     sleep 5
 done &
-xcompmgr &
+picom & 
 exec dwm
