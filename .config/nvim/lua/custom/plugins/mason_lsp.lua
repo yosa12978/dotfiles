@@ -20,6 +20,9 @@ require("mason-lspconfig").setup({
 		"jinja_lsp",
 		"clangd",
 	},
+	automatic_enable = {
+		exclude = { "lua_ls", "yamlls", "clangd" },
+	},
 })
 
 vim.filetype.add({
