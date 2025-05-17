@@ -30,4 +30,3 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 vim.opt.cmdheight = 1
-

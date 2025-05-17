@@ -22,16 +22,6 @@ require("mason-lspconfig").setup({
 	},
 })
 
-local function on_attach(_, _)
-	vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, {})
-	vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
-	vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
-	vim.keymap.set("n", "<leader>gi", vim.lsp.buf.implementation, {})
-	vim.keymap.set("n", "K", function()
-		vim.lsp.buf.hover({ border = "rounded" })
-	end, {})
-end
-
 vim.filetype.add({
 	filename = {
 		[".gitlab-ci.yml"] = "yaml.gitlab",
@@ -43,17 +33,6 @@ vim.filetype.add({
 })
 
 local lsp = require("lspconfig")
-
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
-local servers = require("mason-lspconfig").get_installed_servers()
-
-for _, server_name in ipairs(servers) do
-	lsp[server_name].setup({
-		on_attach = on_attach,
-		capabilities = capabilities,
-	})
-end
 
 lsp.lua_ls.setup({
 	settings = {

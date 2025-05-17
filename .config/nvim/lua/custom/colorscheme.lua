@@ -3,7 +3,7 @@ local bold_white_text = { fg = "#e5e9f0", bg = "none", bold = true }
 local colorscheme = {
 	Normal = nobg,
 	NormalNC = nobg,
-	NormalFloat = { bg = "#060a17" },
+	NormalFloat = nobg, --{ bg = "#060a17" },
 	SignColumn = nobg,
 	ZenBg = nobg,
 
