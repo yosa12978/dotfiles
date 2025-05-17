@@ -1,2 +1,2 @@
-require("custom")
 require("config.lazy")
+require("custom")

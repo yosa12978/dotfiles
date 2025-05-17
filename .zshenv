@@ -2,7 +2,7 @@ export BROWSER=brave
 export EDITOR=nvim
 export MANPAGER='nvim +Man!'
 export XDG_CONFIG_HOME="/home/yusuf/.config"
-export TERMINAL=st # alacritty
+export TERMINAL=alacritty
 
 # ~/.local/bin directory
 export PATH="$PATH:$HOME/.local/bin"

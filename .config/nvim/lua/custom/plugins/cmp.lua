@@ -1,4 +1,5 @@
 local cmp = require("cmp")
+
 local types = require("cmp.types")
 
 local function deprioritize_snippet(entry1, entry2)
@@ -11,11 +12,6 @@ local function deprioritize_snippet(entry1, entry2)
 end
 
 cmp.setup({
-	snippet = {
-		expand = function(args)
-			require("luasnip").lsp_expand(args.body)
-		end,
-	},
 	window = {
 		completion = cmp.config.window.bordered(),
 		documentation = cmp.config.window.bordered(),
@@ -31,8 +27,9 @@ cmp.setup({
 	}),
 	sources = cmp.config.sources({
 		{ name = "nvim_lsp" },
-		{ name = "path" },
 		{ name = "luasnip" },
+		{ name = "path" },
+		{ name = "nvim_lua" },
 	}, {
 		{ name = "buffer" },
 	}),

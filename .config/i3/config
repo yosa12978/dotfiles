@@ -194,6 +194,8 @@ set_from_resource $green      i3wm.green      #abe047
 set_from_resource $blue       i3wm.blue       #49a4f8
 set_from_resource $cyan       i3wm.cyan       #64dbed
 set_from_resource $primary    i3wm.primary    #a47de9
+set_from_resource $subprimary i3wm.subprimary #a47de9
+
 
 # target                 title     bg    text   indicator  border
 client.focused           $primary  $back $white $primary   $primary
@@ -214,7 +216,7 @@ bar {
         focused_separator  $grey
 
         # target           border       bg          text
-        focused_workspace  $primary     $primary    $white
+        focused_workspace  $subprimary  $primary    $white
         active_workspace   $primary     $back       $back
         inactive_workspace $grey        $overlay0   $text
         urgent_workspace   $yellow      $yellow     $text

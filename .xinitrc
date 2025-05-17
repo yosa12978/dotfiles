@@ -1,3 +1,4 @@
+#!/bin/bash
 xrdb "$HOME/.Xresources"
 [ -f "$HOME/.xinit_custom.sh" ] && "$HOME/.xinit_custom.sh"
 nitrogen --restore &
@@ -9,8 +10,8 @@ xss-lock -- slock &
 sxhkd &
 dunst &
 while true; do
-    $HOME/.local/scripts/dwmstatus.sh
-    sleep 5
+	"$HOME/.local/scripts/dwmstatus.sh"
+	sleep 5
 done &
-picom & 
+picom &
 exec dwm

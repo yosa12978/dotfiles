@@ -1,3 +1,3 @@
-require("custom.set")
-require("custom.remap")
+require("custom.options")
+require("custom.mappings")
 require("custom.colorscheme")
