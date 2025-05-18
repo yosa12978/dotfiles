@@ -15,3 +15,6 @@ bindkey -v '^?' backward-delete-char
 source $ZSH/oh-my-zsh.sh
 source ~/.aliases
 source <(fzf --zsh)
+
+eval "$(_OTPY_COMPLETE=zsh_source otpy)"
+
