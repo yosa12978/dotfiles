@@ -17,4 +17,3 @@ source ~/.aliases
 source <(fzf --zsh)
 
 eval "$(_OTPY_COMPLETE=zsh_source otpy)"
-
