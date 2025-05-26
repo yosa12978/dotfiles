@@ -10,3 +10,9 @@ alias wgdown="wg-quick down wg0"
 
 alias http="http --style=pie-dark"
 alias https="https --style=pie-dark"
+
+alias discord="discord --no-sandbox"
+
+tm() {
+	tmux new -s "${PWD##*/}" || tmux attach -t "${PWD##*/}"
+}
