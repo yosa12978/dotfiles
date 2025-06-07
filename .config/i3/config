@@ -193,9 +193,6 @@ set_from_resource $magenta    i3wm.magenta    #a47de9
 set_from_resource $green      i3wm.green      #abe047
 set_from_resource $blue       i3wm.blue       #49a4f8
 set_from_resource $cyan       i3wm.cyan       #64dbed
-set_from_resource $primary    i3wm.primary    #a47de9
-set_from_resource $subprimary i3wm.subprimary #a47de9
-
 
 # target                 title     bg    text   indicator  border
 client.focused           $blue     $back $white $blue      $blue
