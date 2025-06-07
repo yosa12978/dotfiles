@@ -124,11 +124,11 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # gaps
-gaps inner 8
-gaps outer 37
+gaps inner 11 
+gaps outer 19 
 
 # border width
-default_border pixel 0
+default_border pixel 3
 
 # browser
 bindsym $mod+b exec --no-startup-id $BROWSER
