@@ -128,7 +128,7 @@ gaps inner 11
 gaps outer 19 
 
 # border width
-default_border pixel 3
+default_border pixel 0
 
 # browser
 bindsym $mod+b exec --no-startup-id $BROWSER
