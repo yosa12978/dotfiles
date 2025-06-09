@@ -5,7 +5,7 @@
     width = 330
     height = (0, 400)
     origin = top-right
-    offset = (12, 35)
+    offset = (29, 29)
     scale = 0
     notification_limit = 20
     progress_bar = true
@@ -23,7 +23,7 @@
     padding = 20
     horizontal_padding = 13
     text_icon_padding = 0
-    frame_width = 3 
+    frame_width = 0 
     frame_color = "#a47de9"
     gap_size = 0
     separator_color = frame
@@ -66,19 +66,19 @@
     per_monitor_dpi = false
 
 [urgency_low]
-    background = "#101421"
+    background = "#000000"
     foreground = "#888888"
     timeout = 10
     default_icon = dialog-information
 
 [urgency_normal]
-    background = "#101421"
+    background = "#000000"
     foreground = "#ffffff"
     timeout = 10
     override_pause_level = 30
 
 [urgency_critical]
-    background = "#101421"
+    background = "#000000"
     foreground = "#ffffff"
     frame_color = "#eb4129"
     timeout = 0
