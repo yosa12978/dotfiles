@@ -30,3 +30,10 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 vim.opt.cmdheight = 1
+
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "python",
+	callback = function()
+		vim.opt_local.indentexpr = ""
+	end,
+})
