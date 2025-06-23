@@ -14,11 +14,6 @@ local colorscheme = {
 	LineNrAbove = { fg = "#444b6a", bg = "none" },
 	LineNrBelow = { fg = "#444b6a", bg = "none" },
 	LineNr = { fg = "#56628a", bg = "none", bold = true },
-
-	TelescopeNormal = nobg,
-	TelescopeBorder = nobg,
-
-	FloatBorder = nobg,
 }
 
 ---@param color string
