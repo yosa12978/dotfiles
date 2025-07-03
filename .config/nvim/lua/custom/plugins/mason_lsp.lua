@@ -69,6 +69,16 @@ lsp.clangd.setup({
 	},
 })
 
+vim.filetype.add({
+	extension = {
+		tf = "terraform",
+	},
+})
+
+lsp.terraformls.setup({
+	filetypes = { "terraform" },
+})
+
 vim.diagnostic.config({
 	virtual_text = true,
 	signs = true,
