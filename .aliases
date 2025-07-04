@@ -14,6 +14,8 @@ alias https="https --style=pie-dark"
 
 alias discord="discord --no-sandbox"
 
+alias terraform="tofu"
+
 tm() {
 	tmux new -s "${PWD##*/}" || tmux attach -t "${PWD##*/}"
 }
