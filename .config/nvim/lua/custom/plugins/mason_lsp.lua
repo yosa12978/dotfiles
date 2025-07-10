@@ -72,6 +72,7 @@ lsp.clangd.setup({
 vim.filetype.add({
 	extension = {
 		tf = "terraform",
+		j2 = "jinja",
 	},
 })
 
