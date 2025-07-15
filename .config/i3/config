@@ -205,7 +205,7 @@ client.background        $back
 bar {
     status_command i3status
     position bottom
-    font pango:FiraCode Nerd Font 10
+    font pango:JetBrainsMono Nerd Font 10
     colors {
         background         $back
         statusline         $white
@@ -215,7 +215,7 @@ bar {
         # target           border       bg          text
         focused_workspace  $cyan        $blue       $white
         active_workspace   $blue        $back       $back
-        inactive_workspace $grey        $overlay0   $text
-        urgent_workspace   $yellow      $yellow     $text
+        inactive_workspace $back        $back       $text
+        urgent_workspace   $yellow      $yellow     $back
     }
 }
