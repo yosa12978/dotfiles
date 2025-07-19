@@ -204,8 +204,11 @@ client.background        $back
 
 bar {
     status_command i3status
-    position bottom
+    position bottom 
     font pango:JetBrainsMono Nerd Font 10
+
+    i3bar_command i3bar --transparency
+    tray_output none
     colors {
         background         $back
         statusline         $white
@@ -213,9 +216,9 @@ bar {
         focused_separator  $grey
 
         # target           border       bg          text
-        focused_workspace  $cyan        $blue       $white
-        active_workspace   $blue        $back       $back
-        inactive_workspace $back        $back       $text
+        focused_workspace  $back        $back       $white
+        active_workspace   $back        $back       $back
+        inactive_workspace $back        $back       $lightgrey
         urgent_workspace   $yellow      $yellow     $back
     }
 }
