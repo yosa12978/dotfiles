@@ -4,7 +4,7 @@
 set $mod Mod4
 
 # Font for window titles. 
-font pango:FiraCode Nerd Font 10
+font pango:JetBrainsMono Nerd Font 10
 
 # Start XDG autostart .desktop files using dex.
 exec --no-startup-id dex-autostart --autostart --environment i3
