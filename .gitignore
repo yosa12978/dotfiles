@@ -1,3 +1,4 @@
 .config/nvim/session/
 .config/nvim/plugged/
 .config/nvim/lazy-lock.json
+.fonts/.uuid
