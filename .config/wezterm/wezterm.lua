@@ -15,8 +15,8 @@ config.enable_tab_bar = false
 config.window_padding = {
 	left = 25,
 	right = 25,
-	top = 20,
-	bottom = 20,
+	top = 25,
+	bottom = 25,
 }
 
 return config
