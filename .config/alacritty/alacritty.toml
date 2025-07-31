@@ -21,6 +21,6 @@ style = "Regular"
 [general]
 live_config_reload = true
 import = [
-	"~/.config/alacritty/themes/iterm.toml"
+	"~/.config/alacritty/themes/tokyonight.toml"
 ]
 

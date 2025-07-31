@@ -125,7 +125,7 @@ bindsym $mod+r mode "resize"
 
 # gaps
 gaps inner 11 
-gaps outer 19 
+gaps outer 29 
 
 # border width
 default_border pixel 0
@@ -152,6 +152,7 @@ bindsym $mod+Shift+x exec --no-startup-id $HOME/.local/scripts/shutdown.sh
 bindsym $mod+Shift+z exec --no-startup-id $HOME/.local/scripts/reboot.sh
 bindsym $mod+Shift+w exec --no-startup-id $HOME/.local/scripts/weather.sh
 bindsym $mod+Shift+b exec --no-startup-id $HOME/.local/scripts/bookmarks
+bindsym $mod+Shift+s exec --no-startup-id $HOME/.local/scripts/i3bar_toggle.sh
 
 # mouse acceleration settings
 exec_always --no-startup-id xinput set-prop 10 "libinput Accel Profile Enabled" 0 1 0
@@ -204,7 +205,7 @@ client.background        $back
 
 bar {
     status_command i3status
-    position bottom 
+    position top 
     font pango:JetBrainsMono Nerd Font 10
 
     i3bar_command i3bar --transparency

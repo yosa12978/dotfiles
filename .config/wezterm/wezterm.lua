@@ -19,4 +19,7 @@ config.window_padding = {
 	bottom = 25,
 }
 
+config.cursor_blink_ease_in = "Constant"
+config.cursor_blink_ease_out = "Constant"
+
 return config
